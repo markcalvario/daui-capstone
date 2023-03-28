@@ -14,3 +14,8 @@ body{
     --bs-navbar-padding-x: 2rem;
     /* changed the padding left of the navbar */
 }
+.boxes-links {
+   
+    padding-top: 7rem !important;
+    padding-bottom: 7rem !important;
+}
