@@ -2,7 +2,11 @@
 {% block body %}
     <div class="container">
         <h1 class="text-center text-bold mt-5">{{data['title']}}</h1>
-        
+        <ol>
+            {% for step in data['steps'] %}
+                <li> <a href="#step-{{loop.index}}">Step Title</a></li>      
+            {% endfor %}
+        </ol>
         <div>
             {% for step in data['steps'] %}
                 <div id="step-{{loop.index}}" class="row">
