@@ -19,3 +19,11 @@ body{
     padding-top: 7rem !important;
     padding-bottom: 7rem !important;
 }
+a{
+    text-decoration: none;
+    color: black;
+}
+.step-image{
+    width: 25vw;
+    height: 25vh;
+}

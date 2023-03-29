@@ -1,0 +1,18 @@
+{% extends 'template.html' %}
+{% block body %}
+    <div class="container">
+        <h1 class="text-center text-bold mt-5">{{data['title']}}</h1>
+        
+        <div>
+            {% for step in data['steps'] %}
+                <div id="step-{{loop.index}}" class="row">
+                    <h2>Step {{ loop.index }}:</h2>
+                    <p class="my-3">{{step}}</p>
+                    <img class="step-image mx-auto" src="{{data['images'][loop.index-1]}}" alt="h">
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    
+    
+{% endblock %}
