@@ -6,16 +6,72 @@ app= Flask(__name__)
 display_and_text_size_data = {
     "title":"Display & Text Size",
     "steps": [
-        {
-                "step": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quam elementum pulvinar etiam non quam lacus suspendisse faucibus. Et sollicitudin ac orci phasellus egestas tellus rutrum. Pellentesque sit amet porttitor eget. Ultrices mi tempus imperdiet nulla malesuada pellentesque. Etiam non quam lacus suspendisse faucibus interdum posuere. Et malesuada fames ac turpis egestas maecenas pharetra convallis. In eu mi bibendum neque egestas. Non nisi est sit amet facilisis magna etiam tempor orci. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed. Lacus vestibulum sed arcu non odio euismod. Tellus molestie nunc non blandit massa. Massa id neque aliquam vestibulum morbi blandit cursus risus.",
-                "subtitle": "sub1"
+            {
+            "step": "Click on the Display & Text Size tab to see the accessibility settings for Display & Text Size",
+            "subtitle": "Display & Text Size"
             },
             {
-                "step":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quam elementum pulvinar etiam non quam lacus suspendisse faucibus. Et sollicitudin ac orci phasellus egestas tellus rutrum. Pellentesque sit amet porttitor eget. Ultrices mi tempus imperdiet nulla malesuada pellentesque. Etiam non quam lacus suspendisse faucibus interdum posuere. Et malesuada fames ac turpis egestas maecenas pharetra convallis. In eu mi bibendum neque egestas. Non nisi est sit amet facilisis magna etiam tempor orci. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed. Lacus vestibulum sed arcu non odio euismod. Tellusum morbi blandit cursus risus.",
-                "subtitle": "sub2"
-            }      
+            "step": "Display the text in boldface characters.",
+            "subtitle": "Bold Text"
+            },
+            {
+            "step": "Turn on Larger Accessibility Sizes, then adjust the text size using the slider. This setting adjusts to your preferred text size in apps that support Dynamic Type, such as Settings, Calendar, Contacts, Mail, Messages, and Notes.",
+            "subtitle": "Larger Text"
+            },
+            {
+            "step": "This setting underlines text you can tap.",
+            "subtitle": "Button Shapes"
+            },
+            {
+            "step": "This setting indicates switches turned on with “1” and switches turned off with “0”.",
+            "subtitle": "On/Off Labels"
+            },
+            {
+            "step": "This setting reduces the transparency and blurs on some backgrounds.",
+            "subtitle": "Reduce Transparency"
+            },
+            {
+            "step": "This setting improves the contrast and legibility by altering color and text styling. Apps that support Dynamic Type—such as Settings, Calendar, Contacts, Mail, Messages, and Notes—adjust to your preferred text size.",
+            "subtitle": "Increase Contrast"
+            },
+            {
+            "step": "This setting replaces user interface items that rely on color to convey information with alternatives.",
+            "subtitle": "Differentiate Without Color"
+            },
+            {
+            "step": "Smart Invert Colors reverses the colors of the display, except for images, media, and some apps that use dark color styles.",
+            "subtitle": "Smart Invert"
+            },
+            {
+            "step": "Classic Invert Colors reverses the colors of the display, except for images, media, and some apps that use dark color styles.",
+            "subtitle": "Classic Invert"
+            },
+            {
+            "step": "Tap a filter to apply it. To adjust the intensity or hue, drag the sliders.",
+            "subtitle": "Color Filters"
+            },
+            {
+            "step": "This setting reduces the intensity of bright colors.",
+            "subtitle": "Reduce White Point"
+            },
+            {
+            "step": "This setting automatically adjusts the screen brightness for current light conditions using the built-in ambient light sensor.",
+            "subtitle": "Auto-Brightness"
+            }
     ],
-    "images": ["https://gratisography.com/wp-content/uploads/2023/02/gratisography-colorful-kittenfree-stock-photo-800x525.jpg", "https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"]
+    "images": ["img/displaytext.jpeg",
+                "img/boldtext.jpeg",
+                "img/larger.jpeg",
+                "img/buttonshape.jpeg",
+                "img/onoff.jpeg",
+                "img/reduce.jpeg",
+                "img/increasecontrast.jpeg",
+                "img/diffwocolor.jpg",
+                "img/smartinvert.jpg",
+                "img/classicinvert.jpg",
+                "img/colorfilter.jpg",
+                "img/whitept.jpg",
+                "img/auto.jpg"]
 }
 
 zoom_data = {
@@ -66,18 +122,64 @@ zoom_data = {
 }
 spoken_content_data = {
     "title":"Spoken Content",
-    "title":"Display & Text Size",
     "steps": [
         {
-                "step": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quam elementum pulvinar etiam non quam lacus suspendisse faucibus. Et sollicitudin ac orci phasellus egestas tellus rutrum. Pellentesque sit amet porttitor eget. Ultrices mi tempus imperdiet nulla malesuada pellentesque. Etiam non quam lacus suspendisse faucibus interdum posuere. Et malesuada fames ac turpis egestas maecenas pharetra convallis. In eu mi bibendum neque egestas. Non nisi est sit amet facilisis magna etiam tempor orci. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed. Lacus vestibulum sed arcu non odio euismod. Tellus molestie nunc non blandit massa. Massa id neque aliquam vestibulum morbi blandit cursus risus.",
-                "subtitle": "sub1"
+            "step": "Click on the Spoken Content tab to see the accessibility settings for Spoken Content",
+            "subtitle": "Spoken Content"
+         },
+         {
+                "step":  "To hear text you selected, tap the Speak button. Highlight Content is also visible in the options when this option is on.",
+                "subtitle": "Speak Selection"
             },
             {
-                "step":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quam elementum pulvinar etiam non quam lacus suspendisse faucibus. Et sollicitudin ac orci phasellus egestas tellus rutrum. Pellentesque sit amet porttitor eget. Ultrices mi tempus imperdiet nulla malesuada pellentesque. Etiam non quam lacus suspendisse faucibus interdum posuere. Et malesuada fames ac turpis egestas maecenas pharetra convallis. In eu mi bibendum neque egestas. Non nisi est sit amet facilisis magna etiam tempor orci. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed. Lacus vestibulum sed arcu non odio euismod. Tellusum morbi blandit cursus risus.",
-                "subtitle": "sub2"
-            }      
+                "step":  "To hear the entire screen, swipe down with two fingers from the top of the screen. Speech Controller is also visible in the options when this option and Speak Selection are both on.",
+                "subtitle": "Speak Screen"
+            },
+            {
+                "step":  "Show the controller for quick access to Speak Screen and Speak on Touch. You are able to provide controller actions of to “Read all Content” or “Speak on Touch” to either Long Press or Double Tap options. You can also change the opacity of the widget.",
+                "subtitle": "Speech Controller"
+            },
+            {
+                "step":  "iPhone can highlight words, sentences, or both as they’re spoken. You can change the highlight color and style.",
+                "subtitle": "Highlight Content"
+            },
+            {
+                "step":  "You can configure typing feedback for the onscreen and external keyboards and choose to have iPhone speak each character, entire words, auto-corrections, auto-capitalizations, and typing predictions. To hear typing predictions, you also need to go to Settings > General > Keyboards, then turn on Predictive.",
+                "subtitle": "Typing Feedback"
+            },
+            {
+                "step":  "Choose a voice and dialect.",
+                "subtitle": "Voices"
+            },
+            {
+                "step":  "Select a default language.",
+                "subtitle": "Default Language"
+            },
+            {
+                "step":  "Detect what languages are being spoken.",
+                "subtitle": "Detect Languages"
+            },
+            {
+                "step":  "Drag the slider between slow speaking depicted by the tortoise to fast speaking depicted by the hare.",
+                "subtitle": "Speaking Rate"
+            },
+            {
+                "step":  "Dictate or spell out how you want certain phrases to be spoken.",
+                "subtitle": "Pronunciations"
+            }
     ],
-    "images": ["https://gratisography.com/wp-content/uploads/2023/02/gratisography-colorful-kittenfree-stock-photo-800x525.jpg", "https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"]
+    "images": ["img/spokencontent.jpg",
+                "img/speakselection.jpg",
+               "img/speakscreen.jpg",
+               "img/speechcontroller.jpg",
+               "img/highlight content.jpg",
+               "img/typingfeedback.jpg",
+               "img/voices.jpg",
+               "img/defaultlang.jpg",
+               "img/detect.jpeg",
+               "img/speakrate.jpg",
+               "img/pronunciations.jpg"    
+               ]
 }
 
 accessibility_template = "accessibilityTemplate.html"
