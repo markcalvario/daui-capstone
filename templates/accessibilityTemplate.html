@@ -13,6 +13,7 @@
                     <h2 class = "my-2 text-center">{{ loop.index }}: {{step.subtitle}}</h2>
                     <h5 class="my-3">{{step.step}}</h5>
                     <img class="step-image mx-auto" src="{{url_for('static',filename = data['images'][loop.index-1])}}"src="{{data['images'][loop.index-1]}}" alt="{{step.subtitle}}"> 
+                    <p class = "my-2 text-center">{{step.caption}}</p>
                 </div>
             {% endfor %}
         </div>
