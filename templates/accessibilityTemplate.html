@@ -6,16 +6,23 @@
             {% for step in data['steps'] %}
                 <li> <a href="#step-{{loop.index}}">{{step.subtitle}}</a></li>      
             {% endfor %}
+            
+            <li><a href="#take-quiz">Take Quiz</a></li> 
+            
         </ol>
         <div>
             {% for step in data['steps'] %}
-                <div id="step-{{loop.index}}" class="row">
+                <div id="step-{{loop.index}}" class="row my-4">
                     <h2 class = "my-2 text-center">{{ loop.index }}: {{step.subtitle}}</h2>
                     <h5 class="my-3">{{step.step}}</h5>
                     <img class="step-image mx-auto" src="{{url_for('static',filename = data['images'][loop.index-1])}}"src="{{data['images'][loop.index-1]}}" alt="{{step.subtitle}}"> 
                 </div>
             {% endfor %}
         </div>
+        <div id="take-quiz" class="text-center mt-4">
+            <a class="h1" href="/quiz/{{data['title']}}">Take Quiz</a>
+        </div>
+        
     </div>
     
     

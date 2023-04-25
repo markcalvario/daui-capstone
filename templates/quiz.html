@@ -1,0 +1,7 @@
+{% extends 'template.html' %}
+{% block body %}
+    <div class="container">
+        <h1 class="text-center text-bold mt-5">Quiz for {{data['title']}}</h1>
+    </div>
+    <script src="{{url_for('static', filename = '/js/quiz.js')}}"></script>
+{% endblock %}

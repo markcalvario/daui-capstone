@@ -44,7 +44,7 @@ display_and_text_size_data = {
             },
             {
             "step": "Classic Invert Colors reverses the colors of the display, except for images, media, and some apps that use dark color styles.",
-            "subtitle": "Classic Invert"
+            "subtitle": "Classic Invert",
             },
             {
             "step": "Tap a filter to apply it. To adjust the intensity or hue, drag the sliders.",
@@ -183,6 +183,7 @@ spoken_content_data = {
 }
 
 accessibility_template = "accessibilityTemplate.html"
+quiz_html = "quiz.html"
 
 @app.route('/')
 def home():
@@ -199,6 +200,14 @@ def zoom():
 @app.route('/spoken_content')
 def spoken_content():
     return render_template(accessibility_template, data = spoken_content_data)
+
+@app.route('/quiz/<id>')
+def quiz(id):
+    if id == "Display & Text Size":
+        return render_template(quiz_html, data = display_and_text_size_data)
+    elif id == "Spoken Content":
+        return render_template(quiz_html, data = spoken_content_data)
+    return render_template(quiz_html, data = zoom_data)
 
 if __name__=="__main__":
     app.run(port=8000, debug=True)
