@@ -5,10 +5,25 @@
             <h2 class="fw-normal text-center">Tips and Tricks on how to better utilize <br> 3 of Apple’s vision features:<br> </h2>
         </div>
         <br><br><br>
-        <div class="d-flex justify-content-evenly row text-center">
+        <div class="d-flex justify-content-evenly row text-center mb-5">
             <div class="border p-5 bg-light-blue col-md-3 boxes-links"><h3 class="fw-normal"><a href="/display_and_text_size">Display & Text Size</a></h3></div>
             <div class="border p-5 bg-light-blue col-md-3 boxes-links"><h3 class="fw-normal"><a href="/zoom">Zoom</a></h3></div>
             <div class="border p-5 bg-light-blue col-md-3 boxes-links"><h3 class="fw-normal"><a href="/spoken_content">Spoken Content</a></h3></div>
+        </div>
+        <div class="d-flex justify-content-evenly row mb-5">
+            <h4 class = "text-center">Before getting started here's how you can<br> get to the Accessibility tab in Settings</h4>
+            <div class="border p-5 bg-light-blue col-md-3 boxes-links">
+                <img src="{{url_for('static',filename = 'images/settingsApp.JPEG')}}">
+                <p>Go to settings</p>
+            </div>
+            <div class="border p-5 bg-light-blue col-md-3 boxes-links">
+                <img src="{{url_for('static',filename = 'images/scroll-access.jpeg')}}">
+                <p>Scroll down to the Accessibility tab</p>
+            </div>
+            <div class="border p-5 bg-light-blue col-md-3 boxes-links">
+                <img src="{{url_for('static',filename = 'images/search-access.jpeg')}}">
+                <p>Search keyword 'Accessibility' to the Accessibility tab</p>
+            </div>
         </div>
     </div>
 {% endblock %}
