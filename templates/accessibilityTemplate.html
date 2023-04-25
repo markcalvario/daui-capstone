@@ -10,10 +10,9 @@
         <div>
             {% for step in data['steps'] %}
                 <div id="step-{{loop.index}}" class="row">
-                    <h2>Step {{ loop.index }}:</h2>
-                    <h3 class = "my-2 text-center">{{step.subtitle}}</h3>
+                    <h2 class = "my-2 text-center">{{ loop.index }}: {{step.subtitle}}</h2>
                     <h5 class="my-3">{{step.step}}</h5>
-                    <img class="step-image mx-auto" src="{{data['images'][loop.index-1]}}" alt="{{step.subtitle}}"> 
+                    <img class="step-image mx-auto" src="{{url_for('static',filename = data['images'][loop.index-1])}}"src="{{data['images'][loop.index-1]}}" alt="{{step.subtitle}}"> 
                 </div>
             {% endfor %}
         </div>
