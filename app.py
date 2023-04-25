@@ -62,7 +62,7 @@ zoom_data = {
                 "subtitle": "Maximum Zoom Level"
             }
     ],
-   "images": ["img/keyboard-shortcuts.jpeg","img/keyboard-shortcuts.jpeg","img/keyboard-shortcuts.jpeg","img/keyboard-shortcuts.jpeg","img/zoom-controller.jpeg", "img/zoom-controller.jpeg","img/zoom-region.jpeg", "img/zoom-filter.jpeg","img/mirror.jpeg", "img/max-zoom.jpeg"]
+   "images": ["img/zoom.jpeg","img/follow-focus.jpeg","img/smart-typing.jpeg","img/keyboard-shortcuts.jpeg","img/zoom-controller.jpeg", "img/adjust-zoom.jpeg","img/zoom-region.jpeg", "img/zoom-filter.jpeg","img/mirror.jpeg", "img/max-zoom.jpeg"]
 }
 spoken_content_data = {
     "title":"Spoken Content",
