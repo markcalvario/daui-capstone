@@ -193,13 +193,26 @@ def home():
 def display_and_text_size():
     return render_template(accessibility_template, data = display_and_text_size_data)
 
+@app.route('/get_display_and_text_size_data')
+def get_display_and_text_size_data():
+    return display_and_text_size_data
+
 @app.route('/zoom')
 def zoom():
     return render_template(accessibility_template, data = zoom_data)
 
+@app.route('/get_zoom_data')
+def get_zoom_data():
+    return zoom_data
+
 @app.route('/spoken_content')
 def spoken_content():
     return render_template(accessibility_template, data = spoken_content_data)
+
+
+@app.route('/get_spoken_content_data')
+def get_spoken_content_data():
+    return spoken_content_data
 
 @app.route('/quiz/<id>')
 def quiz(id):
@@ -208,6 +221,10 @@ def quiz(id):
     elif id == "Spoken Content":
         return render_template(quiz_html, data = spoken_content_data)
     return render_template(quiz_html, data = zoom_data)
+
+
+
+
 
 if __name__=="__main__":
     app.run(port=8000, debug=True)
