@@ -1,0 +1,28 @@
+{% extends 'template.html' %}
+{% block body %}
+    <p class="d-none" id="title-for-js">{{data['title']}}</p>
+    <div class="container">
+        <h1 class="text-center text-bold mt-5">Quiz for {{data['title']}}</h1>
+        
+        <div class="row">
+            {% for step in data['steps'] %}
+                <div class = "col-3" id="div-img-{{loop.index}}">
+                    <img id="img-{{loop.index}}" src="" alt="">
+                    <p class="text-center">{{loop.index}}</p>
+                </div>
+            {% endfor %}
+            
+        </div>
+        <div>
+            {% for step in data['steps'] %}
+                <div id="step-{{loop.index}}" class="row my-4">
+                    <label for="q-{{loop.index}}" class="form-label">{{loop.index}}</label>
+                    <input type="q-{{loop.index}}" class="form-control" id="exampleFormControlInput1" placeholder="enter the image number">
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    
+    <script type='text/javascript' src="{{url_for('static', filename = '/js/quiz.js')}}"></script>
+    
+{% endblock %}
