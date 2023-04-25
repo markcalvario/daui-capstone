@@ -11,7 +11,8 @@
             {% for step in data['steps'] %}
                 <div id="step-{{loop.index}}" class="row">
                     <h2>Step {{ loop.index }}:</h2>
-                    <p class="my-3">{{step}}</p>
+                    <h5 class="my-3">{{step.step}}</h5>
+                    <p class = "my-2 text-center">{{step.subtitle}}</p>
                     <img class="step-image mx-auto" src="{{data['images'][loop.index-1]}}" alt="h">
                 </div>
             {% endfor %}
