@@ -2,25 +2,30 @@
 {% block body %}
     <p class="d-none" id="title-for-js">{{data['title']}}</p>
     <div class="container">
-        <h1 class="text-center text-bold mt-5">Quiz for {{data['title']}}</h1>
-        
-        <div class="row">
+        <h1 class="text-center text-bold my-3">Quiz for {{data['title']}}</h1>
+        <h4 class="text-center mb-5 text-normal">Match the subtitles with its corresponding images</h4>
+        <div class="row pb-5" id="subtitles">
             {% for step in data['steps'] %}
-                <div class = "col-3" id="div-img-{{loop.index}}">
-                    <img id="img-{{loop.index}}" src="" alt="">
-                    <p class="text-center">{{loop.index}}</p>
-                </div>
-            {% endfor %}
-            
-        </div>
-        <div>
-            {% for step in data['steps'] %}
-                <div id="step-{{loop.index}}" class="row my-4">
-                    <label for="q-{{loop.index}}" class="form-label">{{loop.index}}</label>
-                    <input type="q-{{loop.index}}" class="form-control" id="exampleFormControlInput1" placeholder="enter the image number">
+                <div class = "col-4" id="div-subtitle-{{loop.index}} my-5">
+                    <p id="subtitle-{{loop.index}}" class="text-center"></p>
+                    <p class="d-none" id="answer-{{loop.index}}"></p>
                 </div>
             {% endfor %}
         </div>
+        <div class="row gy-5 mb-4">
+            {% for step in data['steps'] %}
+                <div class = "col-4" id="div-img-{{loop.index}} my-5">
+                    <img id="img-{{loop.index}}" src="" alt="" class="quiz-image mx-auto">
+                    <!-- <label for="floatingPassword">Password</label>
+                    <input type="q-{{loop.index}}" class="form-control" id="exampleFormControlInput1" placeholder="enter the number corresponding to subtitle"> -->
+                    <form class="form-floating">
+                        <input type="q-{{loop.index}}" class="form-control answer" id="input-{{loop.index}}" >
+                        <label for="input-{{loop.index}}">enter the number corresponding to subtitle</label>
+                    </form>
+                </div>
+            {% endfor %}
+        </div>
+        <button id="check-inputs-btn" type="button" class="btn btn-primary">Submit</button>
     </div>
     
     <script type='text/javascript' src="{{url_for('static', filename = '/js/quiz.js')}}"></script>
